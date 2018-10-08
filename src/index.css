@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  background: #eee;
+}
+nav .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+ul {
+  display: inline-block;
+}
+
+.incomplete {
+  color:#f55c00;
+}
+.done {
+  color: #0eb90e;
+}
