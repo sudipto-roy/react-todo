@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-0": "^7.0.0",
     "babel-cli": "^6.26.0",
@@ -33,9 +35,10 @@
     "build": "node build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "webpack:server": "webpack --config ./server/build.js"
+    "webpack:server": "webpack --config ./server/webpack.config.server.js"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "webpack-cli": "^3.1.2"
   }
 }
