@@ -2,14 +2,14 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Loadable from 'react-loadable';
 
-import { AllTasks } from '../../templates/allTasks';
-import { DoneTasks } from '../../templates/doneTasks';
-import { PendingTasks } from '../../templates/pendingTasks';
+import { AllTasks } from '../allTasks';
+import { DoneTasks } from '../doneTasks';
+import { PendingTasks } from '../pendingTasks';
 
 import { DataProvider } from '../../../dataStore/DataStore';
 
 const AddTask = Loadable({
-    loader: () => import('../../templates/addTask/AddTask'),
+    loader: () => import('../addTask/AddTask'),
     loading: () => <div>Loading...</div>
 });
 
